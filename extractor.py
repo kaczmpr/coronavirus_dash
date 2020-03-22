@@ -1,8 +1,10 @@
 import requests
 import pandas as pd
+from os import path
 from datetime import datetime
 
 URL = 'https://corona.lmao.ninja/historical'
+FILE_PATH = path.abspath(path.join(path.join(path.dirname(__file__),'data','coronavirus.tsv')))
 
 requests = requests.get(URL).json()
 
@@ -30,7 +32,7 @@ df.sort_values(by='date', inplace=True)
 df['day_of_epidemie'] = df.loc[df['cases']>0].groupby(['country'])['date'].rank(ascending=True)
 df.dropna(subset=['day_of_epidemie'], inplace=True)
 df['day_of_epidemie'] = df.day_of_epidemie.map(lambda x: int(x))
-df = df.loc[df['country'].isin(['Poland'])]
+df = df.loc[df['country'].isin(['Poland', 'Germany'])]
 
 df = df.set_index('date')
-df.to_csv('coronavirus.csv', encoding='utf8')
+df.to_csv(FILE_PATH, encoding='utf8', sep='\t')
