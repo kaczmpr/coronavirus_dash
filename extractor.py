@@ -9,6 +9,7 @@ FILE_PATH = path.abspath(path.join(path.join(path.dirname(__file__),'data','coro
 requests = requests.get(URL).json()
 
 df = pd.DataFrame.from_dict(requests)
+
 df = df.loc[df['country']!='Country/Region']
 df['timeline'] = df.timeline.map(lambda x: dict(x))
 df = pd.concat([df.drop(['timeline'], axis=1), df['timeline'].apply(pd.Series)], axis=1)
@@ -23,16 +24,18 @@ df_recovered = pd.concat([df.drop(['cases', 'deaths', 'recovered'], axis=1), df.
 df_recovered = pd.melt(df_recovered, id_vars=['country','province'], var_name='date', value_name='recovered')
 
 df = pd.merge(pd.merge(df_cases, df_deaths, how='left', on=['country', 'province', 'date']), df_recovered, how='left', on=['country', 'province', 'date'])
+
 df['date'] = df.date.map(lambda x: datetime.strptime(x, '%m/%d/%y'))
 df['cases'] = df.cases.map(lambda x: int(x))
 df['deaths'] = df.deaths.map(lambda x: int(x))
 df['recovered'] = df.recovered.map(lambda x: int(x))
 
 df.sort_values(by='date', inplace=True)
+
 df['day_of_epidemie'] = df.loc[df['cases']>0].groupby(['country'])['date'].rank(ascending=True)
 df.dropna(subset=['day_of_epidemie'], inplace=True)
 df['day_of_epidemie'] = df.day_of_epidemie.map(lambda x: int(x))
-df = df.loc[df['country'].isin(['Poland', 'Germany'])]
+
 
 df = df.set_index('date')
 df.to_csv(FILE_PATH, encoding='utf8', sep='\t')
