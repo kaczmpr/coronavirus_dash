@@ -2,13 +2,16 @@ import requests
 import pandas as pd
 from os import path
 from datetime import datetime
+from analyzer import country_intesection
 pd.set_option('display.max_columns', 500)
+pd.set_option('display.max_rows', 500)
 pd.set_option('display.width', 1000)
 
 URL_COVID = 'https://corona.lmao.ninja/v2/historical'
 URL_COUNTRIES = 'https://restcountries.eu/rest/v2/all'
 FILE_PATH = path.abspath(path.join(path.join(path.dirname(__file__),'data','coronavirus.tsv')))
 FILE_PATH_COUNTRIES = path.abspath(path.join(path.join(path.dirname(__file__),'data','countries.tsv')))
+FILE_PATH_MERGED = path.abspath(path.join(path.join(path.dirname(__file__),'data','merged.tsv')))
 COUNTRY_MAPPER = {'russia':'russian federation',
                   'bosnia':'bosnia and herzegovina',
                   'taiwan*':'taiwan',
@@ -53,8 +56,8 @@ def get_covid_data():
     df.dropna(subset=['day_of_epidemie'], inplace=True)
     df['day_of_epidemie'] = df.day_of_epidemie.map(lambda x: int(x))
 
-    df = df.set_index('date')
     df.to_csv(FILE_PATH, encoding='utf8', sep='\t')
+    return df
 
 def get_country_data():
     _requests = requests.get(URL_COUNTRIES).json()
@@ -68,5 +71,11 @@ def get_country_data():
 
 
 if __name__=='__main__':
-    get_country_data()
-    get_covid_data()
+    df_country = get_country_data()
+    df_covid = get_covid_data()
+    df_country['country'] = df_country['names'].map(lambda x: country_intesection())
+    df_country['country'] = [(set(a).intersection(b)) for a, b in zip(df_country.names, df_country.country)]
+    df_country['country'] = df_country['country'].map(lambda x: str(x).replace('{', '').replace('}', '').replace('\'',''))
+    df = df_covid.merge(df_country, how='inner', on='country')
+    df = df.set_index('date')
+    df.to_csv(FILE_PATH_MERGED, encoding='utf8', sep='\t')

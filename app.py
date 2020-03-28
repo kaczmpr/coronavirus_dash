@@ -4,12 +4,12 @@ import dash_html_components as html
 import pandas as pd
 import analyzer
 import plotly.graph_objects as go
-from extractor import FILE_PATH
+from extractor import FILE_PATH, FILE_PATH_MERGED
 from dash.dependencies import  Input, Output
 
 
 # Read data from datafile
-df = pd.read_csv(FILE_PATH, sep='\t', encoding='utf-8')
+df = pd.read_csv(FILE_PATH_MERGED, sep='\t', encoding='utf-8')
 
 COUNTRIES = analyzer.get_countries(df)
 DATES = analyzer.get_dates(df)
