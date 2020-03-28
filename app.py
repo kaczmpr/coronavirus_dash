@@ -19,8 +19,8 @@ def select_country():
         id='select_dropdown_country',
         options=[
             dict(
-                label=country.capitalize(),
-                value=country)
+                label=str(country).capitalize(),
+                value=str(country))
             for country in COUNTRIES
         ],
         value=['poland'],
@@ -79,7 +79,7 @@ def generate_line_plot(df):
                     x=list(df.loc[df['country'] == country].date),
                     y=list(df.loc[df['country'] == country].cases),
                     type='line',
-                    name=country.capitalize()
+                    name=country
                 )
             for country in COUNTRIES
             ],
@@ -179,10 +179,10 @@ def update_line_plot(selected_countries, selected_days, selected_type):
             x=df_by_country['day_of_epidemie'],
             y=df_by_country[selected_type],
             mode='lines+markers',
-            text=country.capitalize(),
+            text=country,
             textposition='bottom center',
             type='scatter',
-            name=country.capitalize()
+            name=country
         ))
     return {
         'data': traces,

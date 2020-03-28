@@ -19,125 +19,125 @@ date	country	cases	deaths	day_of_epidemie
 2020-02-08	china	36814	805	18
 2020-02-09	china	39829	905	19
 2020-02-10	china	42354	1012	20
-2020-02-10	diamond princess	135	0	1
+2020-02-10	n/a	135	0	1
 2020-02-11	china	44386	1112	21
-2020-02-11	diamond princess	135	0	2
+2020-02-11	n/a	135	0	2
 2020-02-12	china	44759	1117	22
-2020-02-12	diamond princess	175	0	3
+2020-02-12	n/a	175	0	3
 2020-02-13	china	59895	1369	23
-2020-02-13	diamond princess	175	0	4
+2020-02-13	n/a	175	0	4
 2020-02-14	china	66358	1521	24
-2020-02-14	diamond princess	218	0	5
+2020-02-14	n/a	218	0	5
 2020-02-15	china	68413	1663	25
-2020-02-15	diamond princess	285	0	6
+2020-02-15	n/a	285	0	6
 2020-02-16	china	70513	1766	26
-2020-02-16	diamond princess	355	0	7
+2020-02-16	n/a	355	0	7
 2020-02-17	china	72434	1864	27
-2020-02-17	diamond princess	454	0	8
+2020-02-17	n/a	454	0	8
 2020-02-18	china	74211	2003	28
-2020-02-18	diamond princess	542	0	9
+2020-02-18	n/a	542	0	9
 2020-02-19	china	74619	2116	29
-2020-02-19	diamond princess	621	0	10
+2020-02-19	n/a	621	0	10
 2020-02-20	china	75077	2238	30
-2020-02-20	diamond princess	634	2	11
-2020-02-20	s. korea	104	1	1
+2020-02-20	korea (republic of)	104	1	1
+2020-02-20	n/a	634	2	11
 2020-02-21	china	75550	2238	31
-2020-02-21	diamond princess	634	2	12
 2020-02-21	japan	105	1	1
-2020-02-21	s. korea	204	2	2
+2020-02-21	korea (republic of)	204	2	2
+2020-02-21	n/a	634	2	12
 2020-02-22	china	77001	2443	32
-2020-02-22	diamond princess	634	2	13
 2020-02-22	japan	122	1	2
-2020-02-22	s. korea	433	2	3
+2020-02-22	korea (republic of)	433	2	3
+2020-02-22	n/a	634	2	13
 2020-02-23	china	77022	2445	33
-2020-02-23	diamond princess	691	3	14
 2020-02-23	italy	155	3	1
 2020-02-23	japan	147	1	3
-2020-02-23	s. korea	602	6	4
+2020-02-23	korea (republic of)	602	6	4
+2020-02-23	n/a	691	3	14
 2020-02-24	china	77241	2595	34
-2020-02-24	diamond princess	691	3	15
 2020-02-24	italy	229	7	2
 2020-02-24	japan	159	1	4
-2020-02-24	s. korea	833	8	5
+2020-02-24	korea (republic of)	833	8	5
+2020-02-24	n/a	691	3	15
 2020-02-25	china	77754	2665	35
-2020-02-25	diamond princess	691	3	16
 2020-02-25	italy	322	10	3
 2020-02-25	japan	170	1	5
-2020-02-25	s. korea	977	10	6
+2020-02-25	korea (republic of)	977	10	6
+2020-02-25	n/a	691	3	16
 2020-02-26	china	78166	2717	36
-2020-02-26	diamond princess	705	4	17
-2020-02-26	iran	139	19	1
+2020-02-26	islamic republic of iran	139	19	1
 2020-02-26	italy	453	12	4
 2020-02-26	japan	189	2	6
-2020-02-26	s. korea	1261	12	7
+2020-02-26	korea (republic of)	1261	12	7
+2020-02-26	n/a	705	4	17
 2020-02-27	china	78600	2746	37
-2020-02-27	diamond princess	705	4	18
-2020-02-27	iran	245	26	2
+2020-02-27	islamic republic of iran	245	26	2
 2020-02-27	italy	655	17	5
 2020-02-27	japan	214	4	7
-2020-02-27	s. korea	1766	13	8
+2020-02-27	korea (republic of)	1766	13	8
+2020-02-27	n/a	705	4	18
 2020-02-28	china	78928	2790	38
-2020-02-28	diamond princess	705	6	19
-2020-02-28	iran	388	34	3
+2020-02-28	islamic republic of iran	388	34	3
 2020-02-28	italy	888	21	6
 2020-02-28	japan	228	4	8
-2020-02-28	s. korea	2337	13	9
+2020-02-28	korea (republic of)	2337	13	9
+2020-02-28	n/a	705	6	19
 2020-02-29	china	79356	2837	39
-2020-02-29	diamond princess	705	6	20
-2020-02-29	iran	593	43	4
+2020-02-29	islamic republic of iran	593	43	4
 2020-02-29	italy	1128	29	7
 2020-02-29	japan	241	5	9
-2020-02-29	s. korea	3150	16	10
+2020-02-29	korea (republic of)	3150	16	10
+2020-02-29	n/a	705	6	20
 2020-02-29	singapore	102	0	1
 2020-03-01	china	79932	2872	40
-2020-03-01	diamond princess	705	6	21
 2020-03-01	france	130	2	1
 2020-03-01	germany	130	0	1
-2020-03-01	iran	978	54	5
+2020-03-01	islamic republic of iran	978	54	5
 2020-03-01	italy	1694	34	8
 2020-03-01	japan	256	6	10
-2020-03-01	s. korea	3736	17	11
+2020-03-01	korea (republic of)	3736	17	11
+2020-03-01	n/a	705	6	21
 2020-03-01	singapore	106	0	2
 2020-03-02	china	80136	2914	41
-2020-03-02	diamond princess	705	6	22
 2020-03-02	france	191	3	2
 2020-03-02	germany	159	0	2
-2020-03-02	iran	1501	66	6
+2020-03-02	islamic republic of iran	1501	66	6
 2020-03-02	italy	2036	52	9
 2020-03-02	japan	274	6	11
-2020-03-02	s. korea	4335	28	12
+2020-03-02	korea (republic of)	4335	28	12
+2020-03-02	n/a	705	6	22
 2020-03-02	singapore	108	0	3
 2020-03-02	spain	120	0	1
 2020-03-03	china	80261	2947	42
-2020-03-03	diamond princess	706	6	23
 2020-03-03	france	204	4	3
 2020-03-03	germany	196	0	3
-2020-03-03	iran	2336	77	7
+2020-03-03	islamic republic of iran	2336	77	7
 2020-03-03	italy	2502	79	10
 2020-03-03	japan	293	6	12
-2020-03-03	s. korea	5186	28	13
+2020-03-03	korea (republic of)	5186	28	13
+2020-03-03	n/a	706	6	23
 2020-03-03	singapore	110	0	4
 2020-03-03	spain	165	1	2
 2020-03-03	usa	118	7	1
 2020-03-04	china	80386	2983	43
-2020-03-04	diamond princess	706	6	24
 2020-03-04	france	288	4	4
 2020-03-04	germany	262	0	4
-2020-03-04	iran	2922	92	8
+2020-03-04	islamic republic of iran	2922	92	8
 2020-03-04	italy	3089	107	11
 2020-03-04	japan	331	6	13
-2020-03-04	s. korea	5621	35	14
+2020-03-04	korea (republic of)	5621	35	14
+2020-03-04	n/a	706	6	24
 2020-03-04	singapore	110	0	5
 2020-03-04	spain	222	2	3
 2020-03-04	usa	149	11	2
 2020-03-05	china	80537	3015	44
-2020-03-05	diamond princess	706	6	25
 2020-03-05	france	380	6	5
 2020-03-05	germany	482	0	5
-2020-03-05	iran	3513	107	9
+2020-03-05	islamic republic of iran	3513	107	9
 2020-03-05	italy	3858	148	12
 2020-03-05	japan	360	6	14
-2020-03-05	s. korea	6088	35	15
+2020-03-05	korea (republic of)	6088	35	15
+2020-03-05	n/a	706	6	25
 2020-03-05	singapore	117	0	6
 2020-03-05	spain	259	3	4
 2020-03-05	switzerland	114	1	1
@@ -145,15 +145,15 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-05	usa	217	12	3
 2020-03-06	belgium	109	0	1
 2020-03-06	china	80690	3044	45
-2020-03-06	diamond princess	706	6	26
 2020-03-06	france	656	9	6
 2020-03-06	germany	670	0	6
-2020-03-06	iran	4747	124	10
+2020-03-06	islamic republic of iran	4747	124	10
 2020-03-06	italy	4636	197	13
 2020-03-06	japan	420	6	15
+2020-03-06	korea (republic of)	6593	42	16
+2020-03-06	n/a	706	6	26
 2020-03-06	netherlands	128	1	1
 2020-03-06	norway	108	0	1
-2020-03-06	s. korea	6593	42	16
 2020-03-06	singapore	130	0	7
 2020-03-06	spain	400	5	5
 2020-03-06	sweden	101	0	1
@@ -162,15 +162,15 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-06	usa	262	14	4
 2020-03-07	belgium	169	0	2
 2020-03-07	china	80770	3072	46
-2020-03-07	diamond princess	706	6	27
 2020-03-07	france	959	11	7
 2020-03-07	germany	799	0	7
-2020-03-07	iran	5823	145	11
+2020-03-07	islamic republic of iran	5823	145	11
 2020-03-07	italy	5883	233	14
 2020-03-07	japan	461	6	16
+2020-03-07	korea (republic of)	7041	44	17
+2020-03-07	n/a	706	6	27
 2020-03-07	netherlands	188	1	2
 2020-03-07	norway	147	0	2
-2020-03-07	s. korea	7041	44	17
 2020-03-07	singapore	138	0	8
 2020-03-07	spain	500	10	6
 2020-03-07	sweden	161	0	2
@@ -180,15 +180,15 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-08	austria	104	0	1
 2020-03-08	belgium	200	0	3
 2020-03-08	china	80823	3100	47
-2020-03-08	diamond princess	706	6	28
 2020-03-08	france	1136	19	8
 2020-03-08	germany	1040	0	8
-2020-03-08	iran	6566	194	12
+2020-03-08	islamic republic of iran	6566	194	12
 2020-03-08	italy	7375	366	15
 2020-03-08	japan	502	6	17
+2020-03-08	korea (republic of)	7314	50	18
+2020-03-08	n/a	706	6	28
 2020-03-08	netherlands	265	3	3
 2020-03-08	norway	176	0	3
-2020-03-08	s. korea	7314	50	18
 2020-03-08	singapore	150	0	9
 2020-03-08	spain	673	17	7
 2020-03-08	sweden	203	0	3
@@ -198,16 +198,16 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-09	austria	131	0	2
 2020-03-09	belgium	239	0	4
 2020-03-09	china	80860	3123	48
-2020-03-09	diamond princess	706	6	29
 2020-03-09	france	1219	19	9
 2020-03-09	germany	1176	2	9
-2020-03-09	iran	7161	237	13
+2020-03-09	islamic republic of iran	7161	237	13
 2020-03-09	italy	9172	463	16
 2020-03-09	japan	511	10	18
+2020-03-09	korea (republic of)	7478	53	19
 2020-03-09	malaysia	117	0	1
+2020-03-09	n/a	706	6	29
 2020-03-09	netherlands	321	3	4
 2020-03-09	norway	205	0	4
-2020-03-09	s. korea	7478	53	19
 2020-03-09	singapore	150	0	10
 2020-03-09	spain	1073	28	8
 2020-03-09	sweden	248	0	4
@@ -220,16 +220,16 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-10	belgium	267	0	5
 2020-03-10	china	80887	3139	49
 2020-03-10	denmark	264	0	1
-2020-03-10	diamond princess	706	6	30
 2020-03-10	france	1794	33	10
 2020-03-10	germany	1457	2	10
-2020-03-10	iran	8042	291	14
+2020-03-10	islamic republic of iran	8042	291	14
 2020-03-10	italy	10149	631	17
 2020-03-10	japan	581	10	19
+2020-03-10	korea (republic of)	7513	54	20
 2020-03-10	malaysia	129	0	2
+2020-03-10	n/a	706	6	30
 2020-03-10	netherlands	382	4	5
 2020-03-10	norway	400	0	5
-2020-03-10	s. korea	7513	54	20
 2020-03-10	singapore	160	0	11
 2020-03-10	spain	1695	35	9
 2020-03-10	sweden	355	0	5
@@ -243,17 +243,17 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-11	canada	108	1	1
 2020-03-11	china	80921	3161	50
 2020-03-11	denmark	444	0	2
-2020-03-11	diamond princess	706	7	31
 2020-03-11	france	2293	48	11
 2020-03-11	germany	1908	3	11
-2020-03-11	iran	9000	354	15
+2020-03-11	islamic republic of iran	9000	354	15
 2020-03-11	italy	12462	827	18
 2020-03-11	japan	639	15	20
+2020-03-11	korea (republic of)	7755	60	21
 2020-03-11	malaysia	149	0	3
+2020-03-11	n/a	707	7	31
 2020-03-11	netherlands	503	5	6
 2020-03-11	norway	598	0	6
 2020-03-11	qatar	262	0	1
-2020-03-11	s. korea	7755	60	21
 2020-03-11	singapore	178	0	12
 2020-03-11	spain	2277	54	10
 2020-03-11	sweden	500	1	6
@@ -267,18 +267,18 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-12	canada	117	1	2
 2020-03-12	china	80932	3172	51
 2020-03-12	denmark	617	0	3
-2020-03-12	diamond princess	706	7	32
 2020-03-12	france	2293	48	12
 2020-03-12	germany	2078	3	12
 2020-03-12	iceland	103	0	1
-2020-03-12	iran	10075	429	16
+2020-03-12	islamic republic of iran	10075	429	16
 2020-03-12	italy	12462	827	19
 2020-03-12	japan	639	16	21
+2020-03-12	korea (republic of)	7869	66	22
 2020-03-12	malaysia	149	0	4
+2020-03-12	n/a	707	7	32
 2020-03-12	netherlands	503	5	7
 2020-03-12	norway	702	0	7
 2020-03-12	qatar	262	0	2
-2020-03-12	s. korea	7869	66	22
 2020-03-12	singapore	178	0	13
 2020-03-12	spain	2277	55	11
 2020-03-12	sweden	599	1	7
@@ -292,25 +292,25 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-13	brazil	151	0	1
 2020-03-13	canada	193	1	3
 2020-03-13	china	80945	3180	52
-2020-03-13	czechia	141	0	1
+2020-03-13	czech republic	141	0	1
 2020-03-13	denmark	804	0	4
-2020-03-13	diamond princess	706	7	33
 2020-03-13	finland	155	0	1
 2020-03-13	france	3681	79	13
 2020-03-13	germany	3675	7	13
 2020-03-13	greece	190	1	1
 2020-03-13	iceland	134	0	2
-2020-03-13	iran	11364	514	17
 2020-03-13	iraq	101	9	1
+2020-03-13	islamic republic of iran	11364	514	17
 2020-03-13	israel	126	0	1
 2020-03-13	italy	17660	1266	20
 2020-03-13	japan	701	19	22
+2020-03-13	korea (republic of)	7979	66	23
 2020-03-13	malaysia	197	0	5
+2020-03-13	n/a	707	7	33
 2020-03-13	netherlands	806	10	8
 2020-03-13	norway	996	0	8
 2020-03-13	portugal	112	0	1
 2020-03-13	qatar	320	0	3
-2020-03-13	s. korea	7979	66	23
 2020-03-13	singapore	200	0	14
 2020-03-13	slovenia	141	0	1
 2020-03-13	spain	5232	133	12
@@ -325,9 +325,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-14	brazil	151	0	2
 2020-03-14	canada	198	1	4
 2020-03-14	china	80977	3193	53
-2020-03-14	czechia	189	0	2
+2020-03-14	czech republic	189	0	2
 2020-03-14	denmark	836	1	5
-2020-03-14	diamond princess	706	7	34
 2020-03-14	egypt	109	2	1
 2020-03-14	estonia	115	0	1
 2020-03-14	finland	225	0	2
@@ -336,14 +335,16 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-14	greece	228	3	2
 2020-03-14	iceland	156	0	3
 2020-03-14	india	102	2	1
-2020-03-14	iran	12729	611	18
 2020-03-14	iraq	110	10	2
 2020-03-14	ireland	129	2	1
+2020-03-14	islamic republic of iran	12729	611	18
 2020-03-14	israel	155	0	2
 2020-03-14	italy	21157	1441	21
 2020-03-14	japan	773	22	23
+2020-03-14	korea (republic of)	8086	72	24
 2020-03-14	kuwait	104	0	1
 2020-03-14	malaysia	238	0	6
+2020-03-14	n/a	707	7	34
 2020-03-14	netherlands	962	12	9
 2020-03-14	norway	1090	3	9
 2020-03-14	philippines	111	8	1
@@ -351,7 +352,6 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-14	portugal	169	0	2
 2020-03-14	qatar	337	0	4
 2020-03-14	romania	123	0	1
-2020-03-14	s. korea	8086	72	24
 2020-03-14	saudi arabia	103	0	1
 2020-03-14	singapore	212	0	15
 2020-03-14	slovenia	181	1	2
@@ -367,9 +367,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-15	brazil	162	0	3
 2020-03-15	canada	252	1	5
 2020-03-15	china	81003	3203	54
-2020-03-15	czechia	253	0	3
+2020-03-15	czech republic	253	0	3
 2020-03-15	denmark	875	2	6
-2020-03-15	diamond princess	706	7	35
 2020-03-15	egypt	110	2	2
 2020-03-15	estonia	171	0	2
 2020-03-15	finland	244	0	3
@@ -379,15 +378,17 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-15	iceland	171	5	4
 2020-03-15	india	113	2	2
 2020-03-15	indonesia	117	5	1
-2020-03-15	iran	13938	724	19
 2020-03-15	iraq	116	10	3
 2020-03-15	ireland	129	2	2
+2020-03-15	islamic republic of iran	13938	724	19
 2020-03-15	israel	213	0	3
 2020-03-15	italy	24747	1809	22
 2020-03-15	japan	839	22	24
+2020-03-15	korea (republic of)	8162	75	25
 2020-03-15	kuwait	112	0	2
 2020-03-15	lebanon	110	3	1
 2020-03-15	malaysia	428	0	7
+2020-03-15	n/a	707	7	35
 2020-03-15	netherlands	1138	20	10
 2020-03-15	norway	1221	3	10
 2020-03-15	philippines	140	11	2
@@ -395,7 +396,6 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-15	portugal	245	0	3
 2020-03-15	qatar	401	0	5
 2020-03-15	romania	131	0	2
-2020-03-15	s. korea	8162	75	25
 2020-03-15	san marino	101	5	1
 2020-03-15	saudi arabia	103	0	2
 2020-03-15	singapore	226	0	16
@@ -414,9 +414,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-16	canada	415	4	6
 2020-03-16	chile	155	0	1
 2020-03-16	china	81033	3217	55
-2020-03-16	czechia	298	0	4
+2020-03-16	czech republic	298	0	4
 2020-03-16	denmark	933	3	7
-2020-03-16	diamond princess	706	7	36
 2020-03-16	egypt	150	2	3
 2020-03-16	estonia	205	0	3
 2020-03-16	finland	277	0	4
@@ -426,15 +425,17 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-16	iceland	180	0	5
 2020-03-16	india	119	2	3
 2020-03-16	indonesia	134	5	2
-2020-03-16	iran	14991	853	20
 2020-03-16	iraq	124	10	4
 2020-03-16	ireland	169	2	3
+2020-03-16	islamic republic of iran	14991	853	20
 2020-03-16	israel	218	0	4
 2020-03-16	italy	27980	2158	23
 2020-03-16	japan	839	27	25
+2020-03-16	korea (republic of)	8236	75	26
 2020-03-16	kuwait	123	0	3
 2020-03-16	lebanon	110	3	2
 2020-03-16	malaysia	566	0	8
+2020-03-16	n/a	707	7	36
 2020-03-16	netherlands	1416	24	11
 2020-03-16	norway	1333	3	11
 2020-03-16	pakistan	136	0	1
@@ -443,7 +444,6 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-16	portugal	331	0	4
 2020-03-16	qatar	439	0	6
 2020-03-16	romania	158	0	3
-2020-03-16	s. korea	8236	75	26
 2020-03-16	san marino	109	7	2
 2020-03-16	saudi arabia	118	0	3
 2020-03-16	singapore	243	0	17
@@ -462,9 +462,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-17	canada	478	5	7
 2020-03-17	chile	201	0	2
 2020-03-17	china	81058	3230	56
-2020-03-17	czechia	396	0	5
+2020-03-17	czech republic	396	0	5
 2020-03-17	denmark	1025	4	8
-2020-03-17	diamond princess	706	7	37
 2020-03-17	egypt	196	4	4
 2020-03-17	estonia	225	0	4
 2020-03-17	finland	321	0	5
@@ -474,16 +473,18 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-17	iceland	220	1	6
 2020-03-17	india	142	3	4
 2020-03-17	indonesia	172	5	3
-2020-03-17	iran	16169	988	21
 2020-03-17	iraq	154	11	5
 2020-03-17	ireland	223	2	4
+2020-03-17	islamic republic of iran	16169	988	21
 2020-03-17	israel	250	0	5
 2020-03-17	italy	31506	2503	24
 2020-03-17	japan	878	29	26
+2020-03-17	korea (republic of)	8320	81	27
 2020-03-17	kuwait	130	0	4
 2020-03-17	lebanon	120	3	3
 2020-03-17	luxembourg	140	1	1
 2020-03-17	malaysia	673	2	9
+2020-03-17	n/a	711	7	37
 2020-03-17	netherlands	1711	43	12
 2020-03-17	norway	1463	3	12
 2020-03-17	pakistan	236	0	2
@@ -493,8 +494,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-17	portugal	448	1	5
 2020-03-17	qatar	439	0	7
 2020-03-17	romania	184	0	4
-2020-03-17	russia	114	0	1
-2020-03-17	s. korea	8320	81	27
+2020-03-17	russian federation	114	0	1
 2020-03-17	san marino	109	7	3
 2020-03-17	saudi arabia	171	0	4
 2020-03-17	singapore	266	0	18
@@ -513,9 +513,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-18	canada	657	8	8
 2020-03-18	chile	238	0	3
 2020-03-18	china	81102	3241	57
-2020-03-18	czechia	464	0	6
+2020-03-18	czech republic	464	0	6
 2020-03-18	denmark	1116	4	9
-2020-03-18	diamond princess	712	7	38
 2020-03-18	ecuador	111	2	1
 2020-03-18	egypt	196	6	5
 2020-03-18	estonia	258	0	5
@@ -526,16 +525,18 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-18	iceland	250	1	7
 2020-03-18	india	156	3	5
 2020-03-18	indonesia	227	19	4
-2020-03-18	iran	17361	1135	22
 2020-03-18	iraq	164	12	6
 2020-03-18	ireland	292	2	5
+2020-03-18	islamic republic of iran	17361	1135	22
 2020-03-18	israel	304	0	6
 2020-03-18	italy	35713	2978	25
 2020-03-18	japan	889	29	27
+2020-03-18	korea (republic of)	8413	84	28
 2020-03-18	kuwait	142	0	5
 2020-03-18	lebanon	133	3	4
 2020-03-18	luxembourg	203	2	2
 2020-03-18	malaysia	790	2	10
+2020-03-18	n/a	718	7	38
 2020-03-18	netherlands	2058	58	13
 2020-03-18	norway	1550	6	13
 2020-03-18	pakistan	299	0	3
@@ -545,8 +546,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-18	portugal	448	2	6
 2020-03-18	qatar	452	0	8
 2020-03-18	romania	260	0	5
-2020-03-18	russia	147	0	2
-2020-03-18	s. korea	8413	84	28
+2020-03-18	russian federation	147	0	2
 2020-03-18	san marino	119	11	4
 2020-03-18	saudi arabia	171	0	5
 2020-03-18	singapore	313	0	19
@@ -571,9 +571,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-19	china	81156	3249	58
 2020-03-19	colombia	102	0	1
 2020-03-19	croatia	105	1	1
-2020-03-19	czechia	694	0	7
+2020-03-19	czech republic	694	0	7
 2020-03-19	denmark	1225	6	10
-2020-03-19	diamond princess	712	7	39
 2020-03-19	ecuador	199	3	2
 2020-03-19	egypt	256	6	6
 2020-03-19	estonia	267	0	6
@@ -584,17 +583,19 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-19	iceland	330	1	8
 2020-03-19	india	194	4	6
 2020-03-19	indonesia	311	25	5
-2020-03-19	iran	18407	1284	23
 2020-03-19	iraq	192	13	7
 2020-03-19	ireland	557	3	6
+2020-03-19	islamic republic of iran	18407	1284	23
 2020-03-19	israel	427	0	7
 2020-03-19	italy	41035	3405	26
 2020-03-19	japan	924	29	28
+2020-03-19	korea (republic of)	8565	91	29
 2020-03-19	kuwait	148	0	6
 2020-03-19	lebanon	157	4	5
 2020-03-19	luxembourg	335	4	3
 2020-03-19	malaysia	900	2	11
 2020-03-19	mexico	118	1	1
+2020-03-19	n/a	721	7	39
 2020-03-19	netherlands	2467	77	14
 2020-03-19	norway	1746	7	14
 2020-03-19	pakistan	454	2	4
@@ -605,8 +606,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-19	portugal	785	3	7
 2020-03-19	qatar	460	0	9
 2020-03-19	romania	277	0	6
-2020-03-19	russia	199	1	3
-2020-03-19	s. korea	8565	91	29
+2020-03-19	russian federation	199	1	3
 2020-03-19	san marino	119	11	5
 2020-03-19	saudi arabia	274	0	6
 2020-03-19	serbia	103	0	1
@@ -617,7 +617,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-19	spain	17963	830	18
 2020-03-19	sweden	1439	11	14
 2020-03-19	switzerland	4075	41	15
-2020-03-19	taiwan*	108	1	1
+2020-03-19	taiwan	108	1	1
 2020-03-19	thailand	272	1	5
 2020-03-19	turkey	192	3	1
 2020-03-19	uae	140	0	2
@@ -636,9 +636,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-20	china	81250	3253	59
 2020-03-20	colombia	128	0	2
 2020-03-20	croatia	128	1	2
-2020-03-20	czechia	833	0	8
+2020-03-20	czech republic	833	0	8
 2020-03-20	denmark	1337	9	11
-2020-03-20	diamond princess	712	7	40
 2020-03-20	ecuador	367	5	3
 2020-03-20	egypt	285	8	7
 2020-03-20	estonia	283	0	7
@@ -649,18 +648,20 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-20	iceland	409	0	9
 2020-03-20	india	244	5	7
 2020-03-20	indonesia	369	32	6
-2020-03-20	iran	19644	1433	24
 2020-03-20	iraq	208	17	8
 2020-03-20	ireland	683	3	7
+2020-03-20	islamic republic of iran	19644	1433	24
 2020-03-20	israel	529	0	8
 2020-03-20	italy	47021	4032	27
 2020-03-20	japan	963	33	29
+2020-03-20	korea (republic of)	8652	94	30
 2020-03-20	kuwait	159	0	7
 2020-03-20	latvia	111	0	1
 2020-03-20	lebanon	163	4	6
 2020-03-20	luxembourg	484	4	4
 2020-03-20	malaysia	1030	3	12
 2020-03-20	mexico	164	1	2
+2020-03-20	n/a	721	7	40
 2020-03-20	netherlands	3003	107	15
 2020-03-20	norway	1914	7	15
 2020-03-20	pakistan	501	3	5
@@ -671,8 +672,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-20	portugal	1020	6	8
 2020-03-20	qatar	470	0	10
 2020-03-20	romania	308	0	7
-2020-03-20	russia	253	1	4
-2020-03-20	s. korea	8652	94	30
+2020-03-20	russian federation	253	1	4
 2020-03-20	san marino	144	14	6
 2020-03-20	saudi arabia	344	0	7
 2020-03-20	serbia	135	1	2
@@ -683,7 +683,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-20	spain	20410	1043	19
 2020-03-20	sweden	1639	16	15
 2020-03-20	switzerland	5294	54	16
-2020-03-20	taiwan*	135	2	2
+2020-03-20	taiwan	135	2	2
 2020-03-20	thailand	322	1	6
 2020-03-20	turkey	359	4	2
 2020-03-20	uae	140	2	3
@@ -704,9 +704,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-21	colombia	196	0	3
 2020-03-21	costa rica	117	2	1
 2020-03-21	croatia	206	1	3
-2020-03-21	czechia	995	0	9
+2020-03-21	czech republic	995	0	9
 2020-03-21	denmark	1420	13	12
-2020-03-21	diamond princess	712	8	41
 2020-03-21	dominican republic	112	2	1
 2020-03-21	ecuador	506	7	4
 2020-03-21	egypt	294	10	8
@@ -719,18 +718,20 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-21	iceland	473	1	10
 2020-03-21	india	330	4	8
 2020-03-21	indonesia	450	38	7
-2020-03-21	iran	20610	1556	25
 2020-03-21	iraq	214	17	9
 2020-03-21	ireland	785	3	8
+2020-03-21	islamic republic of iran	20610	1556	25
 2020-03-21	israel	712	1	9
 2020-03-21	italy	53578	4825	28
 2020-03-21	japan	1007	35	30
+2020-03-21	korea (republic of)	8799	102	31
 2020-03-21	kuwait	176	0	8
 2020-03-21	latvia	124	0	2
 2020-03-21	lebanon	187	4	7
 2020-03-21	luxembourg	670	8	5
 2020-03-21	malaysia	1183	4	13
 2020-03-21	mexico	203	2	3
+2020-03-21	n/a	726	8	41
 2020-03-21	netherlands	3640	137	16
 2020-03-21	norway	2118	7	16
 2020-03-21	pakistan	730	3	6
@@ -741,8 +742,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-21	portugal	1280	12	9
 2020-03-21	qatar	481	0	11
 2020-03-21	romania	367	0	8
-2020-03-21	russia	306	1	5
-2020-03-21	s. korea	8799	102	31
+2020-03-21	russian federation	306	1	5
 2020-03-21	san marino	144	20	7
 2020-03-21	saudi arabia	392	0	8
 2020-03-21	serbia	171	1	3
@@ -753,7 +753,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-21	spain	25374	1375	20
 2020-03-21	sweden	1763	20	16
 2020-03-21	switzerland	6575	75	17
-2020-03-21	taiwan*	153	2	3
+2020-03-21	taiwan	153	2	3
 2020-03-21	thailand	411	1	7
 2020-03-21	turkey	670	9	3
 2020-03-21	uae	153	2	4
@@ -768,7 +768,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-22	austria	3582	16	15
 2020-03-22	bahrain	334	2	13
 2020-03-22	belgium	3401	75	17
-2020-03-22	bosnia	126	1	1
+2020-03-22	bosnia and herzegovina	126	1	1
 2020-03-22	brazil	1546	25	10
 2020-03-22	bulgaria	187	3	3
 2020-03-22	canada	1469	21	12
@@ -777,9 +777,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-22	colombia	231	2	4
 2020-03-22	costa rica	134	2	2
 2020-03-22	croatia	254	1	4
-2020-03-22	czechia	1120	1	10
+2020-03-22	czech republic	1120	1	10
 2020-03-22	denmark	1514	13	13
-2020-03-22	diamond princess	712	8	42
 2020-03-22	dominican republic	202	3	2
 2020-03-22	ecuador	789	14	5
 2020-03-22	egypt	327	14	9
@@ -792,13 +791,14 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-22	iceland	568	1	11
 2020-03-22	india	396	7	9
 2020-03-22	indonesia	514	48	8
-2020-03-22	iran	21638	1685	26
 2020-03-22	iraq	233	20	10
 2020-03-22	ireland	906	4	9
+2020-03-22	islamic republic of iran	21638	1685	26
 2020-03-22	israel	883	1	10
 2020-03-22	italy	59138	5476	29
 2020-03-22	japan	1101	41	31
 2020-03-22	jordan	112	0	1
+2020-03-22	korea (republic of)	8961	111	32
 2020-03-22	kuwait	188	0	9
 2020-03-22	latvia	139	0	3
 2020-03-22	lebanon	248	4	8
@@ -807,9 +807,9 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-22	malaysia	1306	10	14
 2020-03-22	mexico	251	2	4
 2020-03-22	morocco	115	4	1
+2020-03-22	n/a	726	8	42
 2020-03-22	netherlands	4217	180	17
 2020-03-22	new zealand	102	0	1
-2020-03-22	north macedonia	115	1	1
 2020-03-22	norway	2385	7	17
 2020-03-22	pakistan	776	5	7
 2020-03-22	panama	313	3	4
@@ -818,27 +818,27 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-22	poland	634	7	9
 2020-03-22	portugal	1600	14	10
 2020-03-22	qatar	494	0	12
+2020-03-22	republic of macedonia	115	1	1
 2020-03-22	romania	433	3	9
-2020-03-22	russia	367	1	6
-2020-03-22	s. korea	8961	111	32
+2020-03-22	russian federation	367	1	6
 2020-03-22	san marino	175	20	8
 2020-03-22	saudi arabia	511	0	9
 2020-03-22	serbia	222	2	4
 2020-03-22	singapore	455	2	23
 2020-03-22	slovakia	185	0	5
 2020-03-22	slovenia	414	2	10
+2020-03-22	socialist republic of vietnam	113	0	1
 2020-03-22	south africa	274	0	5
 2020-03-22	spain	28768	1772	21
 2020-03-22	sweden	1934	21	17
 2020-03-22	switzerland	7474	98	18
-2020-03-22	taiwan*	169	2	4
+2020-03-22	taiwan	169	2	4
 2020-03-22	thailand	599	1	8
 2020-03-22	turkey	1236	30	4
 2020-03-22	uae	153	2	5
 2020-03-22	uk	5745	282	18
 2020-03-22	uruguay	158	0	2
 2020-03-22	usa	33276	417	20
-2020-03-22	vietnam	113	0	1
 2020-03-23	albania	104	4	1
 2020-03-23	algeria	230	17	3
 2020-03-23	andorra	133	1	2
@@ -848,7 +848,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-23	austria	4474	21	16
 2020-03-23	bahrain	377	2	14
 2020-03-23	belgium	3743	88	18
-2020-03-23	bosnia	136	1	2
+2020-03-23	bosnia and herzegovina	136	1	2
 2020-03-23	brazil	1924	34	11
 2020-03-23	bulgaria	201	3	4
 2020-03-23	canada	2088	25	13
@@ -858,9 +858,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-23	costa rica	158	2	3
 2020-03-23	croatia	315	1	5
 2020-03-23	cyprus	116	1	1
-2020-03-23	czechia	1236	1	11
+2020-03-23	czech republic	1236	1	11
 2020-03-23	denmark	1572	24	14
-2020-03-23	diamond princess	712	8	43
 2020-03-23	dominican republic	245	3	3
 2020-03-23	ecuador	981	18	6
 2020-03-23	egypt	366	19	10
@@ -873,13 +872,14 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-23	iceland	588	1	12
 2020-03-23	india	499	10	10
 2020-03-23	indonesia	579	49	9
-2020-03-23	iran	23049	1812	27
 2020-03-23	iraq	266	23	11
 2020-03-23	ireland	1125	6	10
+2020-03-23	islamic republic of iran	23049	1812	27
 2020-03-23	israel	1071	1	11
 2020-03-23	italy	63927	6077	30
 2020-03-23	japan	1128	42	32
 2020-03-23	jordan	127	0	2
+2020-03-23	korea (republic of)	8961	111	33
 2020-03-23	kuwait	189	0	10
 2020-03-23	latvia	180	0	4
 2020-03-23	lebanon	267	4	9
@@ -888,11 +888,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-23	malaysia	1518	14	15
 2020-03-23	malta	107	0	1
 2020-03-23	mexico	316	3	5
-2020-03-23	moldova	109	1	1
 2020-03-23	morocco	143	4	2
+2020-03-23	n/a	737	8	43
 2020-03-23	netherlands	4764	214	18
 2020-03-23	new zealand	102	0	2
-2020-03-23	north macedonia	136	2	2
 2020-03-23	norway	2621	10	18
 2020-03-23	pakistan	875	6	8
 2020-03-23	panama	345	6	5
@@ -901,27 +900,28 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-23	poland	749	8	10
 2020-03-23	portugal	2060	23	11
 2020-03-23	qatar	501	0	13
+2020-03-23	republic of macedonia	136	2	2
+2020-03-23	republic of moldova	109	1	1
 2020-03-23	romania	576	7	10
-2020-03-23	russia	438	1	7
-2020-03-23	s. korea	8961	111	33
+2020-03-23	russian federation	438	1	7
 2020-03-23	san marino	187	20	9
 2020-03-23	saudi arabia	562	0	10
 2020-03-23	serbia	249	3	5
 2020-03-23	singapore	509	2	24
 2020-03-23	slovakia	186	0	6
 2020-03-23	slovenia	442	3	11
+2020-03-23	socialist republic of vietnam	123	0	2
 2020-03-23	south africa	402	0	6
 2020-03-23	spain	35136	2311	22
 2020-03-23	sweden	2046	25	18
 2020-03-23	switzerland	8795	120	19
-2020-03-23	taiwan*	195	2	5
+2020-03-23	taiwan	195	2	5
 2020-03-23	thailand	721	1	9
 2020-03-23	turkey	1529	37	5
 2020-03-23	uae	198	2	6
 2020-03-23	uk	6726	336	19
 2020-03-23	uruguay	162	0	3
 2020-03-23	usa	43847	557	21
-2020-03-23	vietnam	123	0	2
 2020-03-24	albania	123	5	2
 2020-03-24	algeria	264	19	4
 2020-03-24	andorra	164	1	3
@@ -931,9 +931,9 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	austria	5283	28	17
 2020-03-24	bahrain	392	3	15
 2020-03-24	belgium	4269	122	19
-2020-03-24	bosnia	166	3	3
+2020-03-24	bosnia and herzegovina	166	3	3
 2020-03-24	brazil	2247	46	12
-2020-03-24	brunei	104	0	1
+2020-03-24	brunei darussalam	104	0	1
 2020-03-24	bulgaria	218	3	5
 2020-03-24	burkina faso	114	4	1
 2020-03-24	canada	2790	26	14
@@ -943,9 +943,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	costa rica	177	2	4
 2020-03-24	croatia	382	1	6
 2020-03-24	cyprus	124	3	2
-2020-03-24	czechia	1394	3	12
+2020-03-24	czech republic	1394	3	12
 2020-03-24	denmark	1718	32	15
-2020-03-24	diamond princess	712	10	44
 2020-03-24	dominican republic	312	6	4
 2020-03-24	ecuador	1082	27	7
 2020-03-24	egypt	402	20	11
@@ -958,13 +957,14 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	iceland	648	2	13
 2020-03-24	india	536	10	11
 2020-03-24	indonesia	686	55	10
-2020-03-24	iran	24811	1934	28
 2020-03-24	iraq	316	27	12
 2020-03-24	ireland	1329	7	11
+2020-03-24	islamic republic of iran	24811	1934	28
 2020-03-24	israel	1238	3	12
 2020-03-24	italy	69176	6820	31
 2020-03-24	japan	1193	43	33
 2020-03-24	jordan	154	0	3
+2020-03-24	korea (republic of)	9037	120	34
 2020-03-24	kuwait	191	0	11
 2020-03-24	latvia	197	0	5
 2020-03-24	lebanon	318	4	10
@@ -973,11 +973,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	malaysia	1624	16	16
 2020-03-24	malta	110	0	2
 2020-03-24	mexico	367	4	6
-2020-03-24	moldova	125	1	2
 2020-03-24	morocco	170	5	3
+2020-03-24	n/a	785	10	44
 2020-03-24	netherlands	5580	277	19
 2020-03-24	new zealand	155	0	3
-2020-03-24	north macedonia	148	2	3
 2020-03-24	norway	2863	12	19
 2020-03-24	pakistan	972	7	9
 2020-03-24	panama	345	6	6
@@ -986,21 +985,23 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	poland	901	10	11
 2020-03-24	portugal	2362	33	12
 2020-03-24	qatar	526	0	14
+2020-03-24	republic of macedonia	148	2	3
+2020-03-24	republic of moldova	125	1	2
 2020-03-24	romania	794	11	11
-2020-03-24	russia	495	1	8
-2020-03-24	s. korea	9037	120	34
+2020-03-24	russian federation	495	1	8
 2020-03-24	san marino	187	21	10
 2020-03-24	saudi arabia	767	1	11
 2020-03-24	serbia	303	3	6
 2020-03-24	singapore	558	2	25
 2020-03-24	slovakia	204	0	7
 2020-03-24	slovenia	480	4	12
+2020-03-24	socialist republic of vietnam	134	0	3
 2020-03-24	south africa	554	0	7
 2020-03-24	spain	39885	2808	23
 2020-03-24	sri lanka	102	0	1
 2020-03-24	sweden	2286	36	19
 2020-03-24	switzerland	9877	122	20
-2020-03-24	taiwan*	215	2	6
+2020-03-24	taiwan	215	2	6
 2020-03-24	thailand	827	4	10
 2020-03-24	tunisia	114	4	1
 2020-03-24	turkey	1872	44	6
@@ -1008,7 +1009,6 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-24	uk	8164	423	20
 2020-03-24	uruguay	162	0	4
 2020-03-24	usa	53740	706	22
-2020-03-24	vietnam	134	0	3
 2020-03-25	albania	146	5	3
 2020-03-25	algeria	302	21	5
 2020-03-25	andorra	188	1	4
@@ -1018,9 +1018,9 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	austria	5588	30	18
 2020-03-25	bahrain	419	4	16
 2020-03-25	belgium	4937	178	20
-2020-03-25	bosnia	176	3	4
+2020-03-25	bosnia and herzegovina	176	3	4
 2020-03-25	brazil	2554	59	13
-2020-03-25	brunei	109	0	2
+2020-03-25	brunei darussalam	109	0	2
 2020-03-25	bulgaria	242	3	6
 2020-03-25	burkina faso	146	4	2
 2020-03-25	canada	3251	30	15
@@ -1030,9 +1030,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	costa rica	201	2	5
 2020-03-25	croatia	442	1	7
 2020-03-25	cyprus	132	3	3
-2020-03-25	czechia	1654	6	13
+2020-03-25	czech republic	1654	6	13
 2020-03-25	denmark	1862	34	16
-2020-03-25	diamond princess	712	10	45
 2020-03-25	dominican republic	392	10	5
 2020-03-25	ecuador	1173	28	8
 2020-03-25	egypt	456	21	12
@@ -1045,13 +1044,14 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	iceland	737	2	14
 2020-03-25	india	657	12	12
 2020-03-25	indonesia	790	58	11
-2020-03-25	iran	27017	2077	29
 2020-03-25	iraq	346	29	13
 2020-03-25	ireland	1564	9	12
+2020-03-25	islamic republic of iran	27017	2077	29
 2020-03-25	israel	2369	5	13
 2020-03-25	italy	74386	7503	32
 2020-03-25	japan	1307	45	34
 2020-03-25	jordan	172	0	4
+2020-03-25	korea (republic of)	9137	126	35
 2020-03-25	kuwait	195	0	12
 2020-03-25	latvia	221	0	6
 2020-03-25	lebanon	333	6	11
@@ -1060,11 +1060,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	malaysia	1796	20	17
 2020-03-25	malta	129	0	3
 2020-03-25	mexico	405	5	7
-2020-03-25	moldova	149	1	3
 2020-03-25	morocco	225	6	4
+2020-03-25	n/a	792	10	45
 2020-03-25	netherlands	6438	357	20
 2020-03-25	new zealand	205	0	4
-2020-03-25	north macedonia	177	3	4
 2020-03-25	norway	3084	14	20
 2020-03-25	pakistan	1063	8	10
 2020-03-25	panama	443	8	7
@@ -1073,21 +1072,23 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	poland	1051	14	12
 2020-03-25	portugal	2995	43	13
 2020-03-25	qatar	537	0	15
+2020-03-25	republic of macedonia	177	3	4
+2020-03-25	republic of moldova	149	1	3
 2020-03-25	romania	906	17	12
-2020-03-25	russia	658	3	9
-2020-03-25	s. korea	9137	126	35
+2020-03-25	russian federation	658	3	9
 2020-03-25	san marino	208	21	11
 2020-03-25	saudi arabia	900	2	12
 2020-03-25	serbia	384	4	7
 2020-03-25	singapore	631	2	26
 2020-03-25	slovakia	216	0	8
 2020-03-25	slovenia	528	5	13
+2020-03-25	socialist republic of vietnam	141	0	4
 2020-03-25	south africa	709	0	8
 2020-03-25	spain	49515	3647	24
 2020-03-25	sri lanka	102	0	2
 2020-03-25	sweden	2526	62	20
 2020-03-25	switzerland	10897	153	21
-2020-03-25	taiwan*	235	2	7
+2020-03-25	taiwan	235	2	7
 2020-03-25	thailand	934	4	11
 2020-03-25	tunisia	173	5	2
 2020-03-25	turkey	2433	59	7
@@ -1096,7 +1097,6 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-25	ukraine	145	5	1
 2020-03-25	uruguay	189	0	5
 2020-03-25	usa	65778	942	23
-2020-03-25	vietnam	141	0	4
 2020-03-26	albania	174	6	4
 2020-03-26	algeria	367	25	6
 2020-03-26	andorra	224	3	5
@@ -1107,9 +1107,9 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	azerbaijan	122	3	1
 2020-03-26	bahrain	458	4	17
 2020-03-26	belgium	6235	220	21
-2020-03-26	bosnia	191	3	5
+2020-03-26	bosnia and herzegovina	191	3	5
 2020-03-26	brazil	2985	77	14
-2020-03-26	brunei	114	0	3
+2020-03-26	brunei darussalam	114	0	3
 2020-03-26	bulgaria	264	3	7
 2020-03-26	burkina faso	152	7	3
 2020-03-26	canada	4042	38	16
@@ -1119,9 +1119,8 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	costa rica	231	2	6
 2020-03-26	croatia	495	3	8
 2020-03-26	cyprus	146	3	4
-2020-03-26	czechia	1925	9	14
+2020-03-26	czech republic	1925	9	14
 2020-03-26	denmark	2023	41	17
-2020-03-26	diamond princess	712	10	46
 2020-03-26	dominican republic	488	10	6
 2020-03-26	ecuador	1403	34	9
 2020-03-26	egypt	495	24	13
@@ -1135,14 +1134,15 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	iceland	802	2	15
 2020-03-26	india	727	20	13
 2020-03-26	indonesia	893	78	12
-2020-03-26	iran	29406	2234	30
 2020-03-26	iraq	382	36	14
 2020-03-26	ireland	1819	19	13
+2020-03-26	islamic republic of iran	29406	2234	30
 2020-03-26	israel	2693	8	14
 2020-03-26	italy	80589	8215	33
 2020-03-26	japan	1387	47	35
 2020-03-26	jordan	212	0	5
 2020-03-26	kazakhstan	111	1	1
+2020-03-26	korea (republic of)	9241	131	36
 2020-03-26	kuwait	208	0	13
 2020-03-26	latvia	244	0	7
 2020-03-26	lebanon	368	6	12
@@ -1151,11 +1151,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	malaysia	2031	23	18
 2020-03-26	malta	134	0	4
 2020-03-26	mexico	475	6	8
-2020-03-26	moldova	177	1	4
 2020-03-26	morocco	275	11	5
+2020-03-26	n/a	808	10	46
 2020-03-26	netherlands	7468	435	21
 2020-03-26	new zealand	283	0	5
-2020-03-26	north macedonia	201	3	5
 2020-03-26	norway	3369	14	21
 2020-03-26	oman	109	0	1
 2020-03-26	pakistan	1201	9	11
@@ -1165,9 +1164,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	poland	1221	16	13
 2020-03-26	portugal	3544	60	14
 2020-03-26	qatar	549	0	16
+2020-03-26	republic of macedonia	201	3	5
+2020-03-26	republic of moldova	177	1	4
 2020-03-26	romania	1029	23	13
-2020-03-26	russia	840	3	10
-2020-03-26	s. korea	9241	131	36
+2020-03-26	russian federation	840	3	10
 2020-03-26	san marino	208	21	12
 2020-03-26	saudi arabia	1012	3	13
 2020-03-26	senegal	105	0	1
@@ -1175,12 +1175,13 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	singapore	683	2	27
 2020-03-26	slovakia	226	0	9
 2020-03-26	slovenia	562	6	14
+2020-03-26	socialist republic of vietnam	153	0	5
 2020-03-26	south africa	927	0	9
 2020-03-26	spain	57786	4365	25
 2020-03-26	sri lanka	106	0	3
 2020-03-26	sweden	2840	77	21
 2020-03-26	switzerland	11811	191	22
-2020-03-26	taiwan*	252	2	8
+2020-03-26	taiwan	252	2	8
 2020-03-26	thailand	1045	4	12
 2020-03-26	tunisia	197	6	3
 2020-03-26	turkey	3629	75	8
@@ -1189,8 +1190,7 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-26	ukraine	196	5	2
 2020-03-26	uruguay	217	0	6
 2020-03-26	usa	83836	1209	24
-2020-03-26	venezuela	107	0	1
-2020-03-26	vietnam	153	0	5
+2020-03-26	venezuela (bolivarian republic of)	107	0	1
 2020-03-27	afghanistan	110	4	1
 2020-03-27	albania	186	8	5
 2020-03-27	algeria	409	26	7
@@ -1202,9 +1202,9 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	azerbaijan	165	3	2
 2020-03-27	bahrain	466	4	18
 2020-03-27	belgium	7284	289	22
-2020-03-27	bosnia	237	4	6
+2020-03-27	bosnia and herzegovina	237	4	6
 2020-03-27	brazil	3417	92	15
-2020-03-27	brunei	115	0	4
+2020-03-27	brunei darussalam	115	0	4
 2020-03-27	bulgaria	293	3	8
 2020-03-27	burkina faso	180	9	4
 2020-03-27	canada	4682	54	17
@@ -1212,12 +1212,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	china	81897	3296	66
 2020-03-27	colombia	539	6	9
 2020-03-27	costa rica	263	2	7
-2020-03-27	cote d'ivoire	101	0	1
 2020-03-27	croatia	586	3	9
 2020-03-27	cyprus	162	5	5
-2020-03-27	czechia	2279	9	15
+2020-03-27	czech republic	2279	9	15
 2020-03-27	denmark	2200	52	18
-2020-03-27	diamond princess	712	10	47
 2020-03-27	dominican republic	581	20	7
 2020-03-27	ecuador	1595	36	10
 2020-03-27	egypt	536	30	14
@@ -1231,14 +1229,15 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	iceland	890	2	16
 2020-03-27	india	887	20	14
 2020-03-27	indonesia	1046	87	13
-2020-03-27	iran	32332	2378	31
 2020-03-27	iraq	458	40	15
 2020-03-27	ireland	2121	22	14
+2020-03-27	islamic republic of iran	32332	2378	31
 2020-03-27	israel	3035	12	15
 2020-03-27	italy	86498	9134	34
 2020-03-27	japan	1468	49	36
 2020-03-27	jordan	235	1	6
 2020-03-27	kazakhstan	150	1	2
+2020-03-27	korea (republic of)	9332	139	37
 2020-03-27	kuwait	225	0	14
 2020-03-27	latvia	280	0	8
 2020-03-27	lebanon	391	8	13
@@ -1247,11 +1246,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	malaysia	2161	26	19
 2020-03-27	malta	139	0	5
 2020-03-27	mexico	585	8	9
-2020-03-27	moldova	199	2	5
 2020-03-27	morocco	345	23	6
+2020-03-27	n/a	813	10	47
 2020-03-27	netherlands	8647	547	22
 2020-03-27	new zealand	368	0	6
-2020-03-27	north macedonia	219	3	6
 2020-03-27	norway	3755	19	22
 2020-03-27	oman	131	0	2
 2020-03-27	pakistan	1373	11	12
@@ -1261,9 +1259,10 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	poland	1389	16	14
 2020-03-27	portugal	4268	76	15
 2020-03-27	qatar	562	0	17
+2020-03-27	republic of macedonia	219	3	6
+2020-03-27	republic of moldova	199	2	5
 2020-03-27	romania	1292	26	14
-2020-03-27	russia	1036	4	11
-2020-03-27	s. korea	9332	139	37
+2020-03-27	russian federation	1036	4	11
 2020-03-27	san marino	223	21	13
 2020-03-27	saudi arabia	1104	3	14
 2020-03-27	senegal	119	0	2
@@ -1271,12 +1270,13 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	singapore	732	2	28
 2020-03-27	slovakia	269	0	10
 2020-03-27	slovenia	632	9	15
+2020-03-27	socialist republic of vietnam	163	0	6
 2020-03-27	south africa	1170	1	10
 2020-03-27	spain	65719	5138	26
 2020-03-27	sri lanka	106	0	4
 2020-03-27	sweden	3069	105	22
 2020-03-27	switzerland	12928	231	23
-2020-03-27	taiwan*	267	2	9
+2020-03-27	taiwan	267	2	9
 2020-03-27	thailand	1136	5	13
 2020-03-27	tunisia	227	6	4
 2020-03-27	turkey	5698	92	9
@@ -1285,5 +1285,4 @@ date	country	cases	deaths	day_of_epidemie
 2020-03-27	ukraine	310	5	3
 2020-03-27	uruguay	238	0	7
 2020-03-27	usa	101657	1581	25
-2020-03-27	venezuela	107	1	2
-2020-03-27	vietnam	163	0	6
+2020-03-27	venezuela (bolivarian republic of)	107	1	2
