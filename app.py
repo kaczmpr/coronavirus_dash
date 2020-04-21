@@ -15,6 +15,66 @@ COUNTRIES = analyzer.get_countries(df)
 DATES = analyzer.get_dates(df)
 
 
+def build_title():
+    return html.Div(
+        id='title',
+        className='title',
+        children=[
+            html.Div(
+                id='title_text',
+                children=[
+                    html.H5('Coronavirus pandemic spread dashboard'),
+                    html.H6('Disease control and country analysis tool')
+                ],
+            ),
+            html.Div(
+                id='title_logo',
+                children=[
+                    html.Button(
+                        id='learn_more_button', children='LEARN MORE', n_clicks=0
+                    ),
+                ],
+            ),
+        ],
+    )
+
+
+def build_tabs():
+    return html.Div(
+        id='tabs',
+        className='tabs',
+        children=[
+            dcc.Tabs(
+                id='app_tabs',
+                value='tab1',
+                className='custom_tabs',
+                children=[
+                    dcc.Tab(
+                        id='country_tab',
+                        label='Country',
+                        value='tab1',
+                        className='custom_tab',
+                        selected_className='custom_tab_selected',
+                    ),
+                    dcc.Tab(
+                        id='continent_tab',
+                        label='Continent',
+                        value='tab2',
+                        className='custom_tab',
+                        selected_className='custom_tab_selected'
+                    ),
+                    dcc.Tab(
+                        id='poland_tab',
+                        label='Poland',
+                        value='tab3',
+                        className='custom_tab',
+                        selected_className='custom_tab_selected'
+                    ),
+                ],
+            )
+        ],
+    )
+
 def select_country():
     return dcc.Dropdown(
         id='select_dropdown_country',
@@ -26,6 +86,13 @@ def select_country():
         ],
         value=['poland'],
         multi=True
+    )
+
+def dropdown_contry():
+    return (
+        dcc.Dropdown(
+            id='dropdown_country'
+        )
     )
 
 def select_checkbox():
@@ -71,34 +138,58 @@ colors = {
 
 # Set layout
 app.layout = html.Div(
+    id='big_app_container',
     children=[
-        html.Div(children=[
-            select_country(),
-        ], style={'width': '48%', 'display': 'inline-block'}
-        ),
-        html.Div(children=[
-            select_checkbox(),
-        ], style={'width': '48%', 'display': 'inline-block'}
-        ),
-        html.Div(children=[
-            select_range_slider(),
-        ]
-        ),
-        html.Div(children=[
-            dcc.Graph(id='line_plot_country')
-        ]
-        ),
-        html.Div(children=[
-            dcc.Graph(id='line_plot_new_cases')
-        ]),
-        html.Div(children=[
-            dcc.Graph(id='line_plot_percent_of_new_cases')
-        ]),
-        html.Div(children=[
-            dcc.Graph(id='line_plot_percent_of_population')
-        ])
-])
+        build_title(),
+        html.Div(
+            id='app_container',
+            children=[
+                build_tabs(),
+                html.Div(id='app_content')
+            ]
+        )
+        #html.Div(children=[
+        #    select_country(),
+        #], style={'width': '48%', 'display': 'inline-block'}
+        #),
+        #html.Div(children=[
+        #    select_checkbox(),
+        #], style={'width': '48%', 'display': 'inline-block'}
+        #),
+        #html.Div(children=[
+        #    select_range_slider(),
+        #]
+        #),
+        #html.Div(children=[
+        #    dcc.Graph(id='line_plot_country')
+        #]
+        #),
+        #html.Div(children=[
+        #    dcc.Graph(id='line_plot_new_cases')
+        #]),
+        #html.Div(children=[
+        #    dcc.Graph(id='line_plot_percent_of_new_cases')
+        #]),
+        #html.Div(children=[
+        #    dcc.Graph(id='line_plot_percent_of_population')
+    ]
+)
+#])
 
+@app.callback(
+    [Output('app_content','children')],
+    [Input('app_tabs','value')],
+)
+def update_select_country(tab_switch):
+    if tab_switch == 'tab1':
+        return html.Div(
+            children=[
+                select_country(),
+            ],
+        )
+
+
+"""
 @app.callback(
     Output('line_plot_country','figure'),
     [Input('select_dropdown_country', 'value'),
@@ -218,6 +309,7 @@ def update_line_plot_percent_of_population(selected_countries, selected_days, se
             yaxis=dict(title='Count'),
         )
     }
+"""
 
 if __name__=='__main__':
     app.run_server(debug=True)
