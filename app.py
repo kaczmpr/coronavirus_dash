@@ -85,15 +85,10 @@ def select_country():
             for country in COUNTRIES
         ],
         value=['poland'],
-        multi=True
+        multi=True,
+        style={'width': '48%', 'display': 'inline-block'}
     )
 
-def dropdown_contry():
-    return (
-        dcc.Dropdown(
-            id='dropdown_country'
-        )
-    )
 
 def select_checkbox():
     return dcc.Dropdown(
@@ -102,7 +97,8 @@ def select_checkbox():
             {'label': 'cases', 'value': 'cases'},
             {'label': 'deaths', 'value': 'deaths'},
         ],
-        value='cases'
+        value='cases',
+        style={'width': '48%', 'display': 'inline-block'}
     )
 
 
@@ -114,7 +110,6 @@ def select_range_slider(name='select_rangeslider_days'):
         max = max(df.day_of_epidemie),
         value=[min(df.day_of_epidemie), min(df.day_of_epidemie)+10]
     )
-
 
 def generate_map_cases_plot(df):
     df = df[['date', 'country', 'cases', 'day_of_epidemie', 'new_cases', 'name', 'alpha3Code', 'region']]
@@ -148,48 +143,35 @@ app.layout = html.Div(
                 html.Div(id='app_content')
             ]
         )
-        #html.Div(children=[
-        #    select_country(),
-        #], style={'width': '48%', 'display': 'inline-block'}
-        #),
-        #html.Div(children=[
-        #    select_checkbox(),
-        #], style={'width': '48%', 'display': 'inline-block'}
-        #),
-        #html.Div(children=[
-        #    select_range_slider(),
-        #]
-        #),
-        #html.Div(children=[
-        #    dcc.Graph(id='line_plot_country')
-        #]
-        #),
-        #html.Div(children=[
-        #    dcc.Graph(id='line_plot_new_cases')
-        #]),
-        #html.Div(children=[
-        #    dcc.Graph(id='line_plot_percent_of_new_cases')
-        #]),
-        #html.Div(children=[
-        #    dcc.Graph(id='line_plot_percent_of_population')
     ]
 )
-#])
 
 @app.callback(
     [Output('app_content','children')],
     [Input('app_tabs','value')],
 )
-def update_select_country(tab_switch):
+def render_content(tab_switch):
     if tab_switch == 'tab1':
-        return html.Div(
-            children=[
-                select_country(),
-            ],
-        )
+        return html.Div([
+            select_country(),
+            select_checkbox(),
+            select_range_slider(),
+            dcc.Graph(id='line_plot_country'),
+            dcc.Graph(id='line_plot_new_cases'),
+            dcc.Graph(id='line_plot_percent_of_new_cases'),
+            dcc.Graph(id='line_plot_percent_of_population'),
+        ]),
+    elif tab_switch == 'tab2':
+        return html.Div([
+            html.H3('Continent')
+        ]),
+    elif tab_switch == 'tab3':
+        return html.Div([
+            html.H3('Poland')
+        ]),
 
 
-"""
+'''
 @app.callback(
     Output('line_plot_country','figure'),
     [Input('select_dropdown_country', 'value'),
@@ -309,7 +291,7 @@ def update_line_plot_percent_of_population(selected_countries, selected_days, se
             yaxis=dict(title='Count'),
         )
     }
-"""
+'''
 
 if __name__=='__main__':
     app.run_server(debug=True)
