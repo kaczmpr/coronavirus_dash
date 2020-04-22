@@ -11,8 +11,55 @@ from dash.dependencies import  Input, Output
 # Read data from datafile
 df = pd.read_csv(FILE_PATH_MERGED, sep='\t', encoding='utf-8')
 
-COUNTRIES = analyzer.get_countries(df)
-DATES = analyzer.get_dates(df)
+def build_country_inputs():
+    return html.Div([
+        html.Div([
+            html.Div([
+                html.P(),
+                html.H5('Input parameters country'),
+                dcc.Dropdown(
+                    id='country_tab_country',
+                    options=[
+                        dict(
+                            label=str(country).capitalize(),
+                            value=str(country))
+                        for country in analyzer.get_countries(df)
+                    ],
+                    placeholder='Select country',
+                    value=[],
+                    multi=True,
+                    style={'padding': '10px', 'max-width': '800px'}
+                )
+            ], className='six columns'),
+
+            html.Div([
+                html.P(),
+                html.H5('Input parameters type'),
+                dcc.RadioItems(
+                    id='country_tab_type',
+                    options=[
+                        {'label': 'cases', 'value': 'cases'},
+                        {'label': 'deaths', 'value': 'deaths'},
+                    ],
+                    value='cases',
+                )
+            ], className='six columns'),
+        ], className='row'),
+
+        html.Div([
+            html.Div([
+                html.P(),
+                html.H5('Input parameters type'),
+                dcc.RangeSlider(
+                    id='country_tab_days',
+                    marks={day: '{}'.format(day) for day in range(1, max(df.day_of_epidemie))},
+                    min=1,
+                    max=max(df.day_of_epidemie),
+                    value=[1, 10]
+                )
+            ]),
+        ], className='row')
+    ])
 
 
 def build_title():
@@ -55,60 +102,37 @@ def build_tabs():
                         value='tab1',
                         className='custom_tab',
                         selected_className='custom_tab_selected',
+                        children=[
+                            build_country_inputs(),
+                            dcc.Graph(id='line_plot_country'),
+                            dcc.Graph(id='line_plot_new_cases'),
+                            dcc.Graph(id='line_plot_percent_of_new_cases'),
+                            dcc.Graph(id='line_plot_percent_of_population'),
+                        ]
                     ),
                     dcc.Tab(
                         id='continent_tab',
                         label='Continent',
                         value='tab2',
                         className='custom_tab',
-                        selected_className='custom_tab_selected'
+                        selected_className='custom_tab_selected',
+                        children=[
+                            html.H3('Continent')
+                        ]
                     ),
                     dcc.Tab(
                         id='poland_tab',
                         label='Poland',
                         value='tab3',
                         className='custom_tab',
-                        selected_className='custom_tab_selected'
+                        selected_className='custom_tab_selected',
+                        children=[
+                            html.H3('Poland')
+                        ]
                     ),
                 ],
             )
         ],
-    )
-
-def select_country():
-    return dcc.Dropdown(
-        id='select_dropdown_country',
-        options=[
-            dict(
-                label=str(country).capitalize(),
-                value=str(country))
-            for country in COUNTRIES
-        ],
-        value=['poland'],
-        multi=True,
-        style={'width': '48%', 'display': 'inline-block'}
-    )
-
-
-def select_checkbox():
-    return dcc.Dropdown(
-        id='select_checkbox_type_value',
-        options=[
-            {'label': 'cases', 'value': 'cases'},
-            {'label': 'deaths', 'value': 'deaths'},
-        ],
-        value='cases',
-        style={'width': '48%', 'display': 'inline-block'}
-    )
-
-
-def select_range_slider(name='select_rangeslider_days'):
-    return dcc.RangeSlider(
-        id=name,
-        marks={day: '{}'.format(day) for day in range(min(df.day_of_epidemie), max(df.day_of_epidemie))},
-        min = min(df.day_of_epidemie),
-        max = max(df.day_of_epidemie),
-        value=[min(df.day_of_epidemie), min(df.day_of_epidemie)+10]
     )
 
 def generate_map_cases_plot(df):
@@ -124,12 +148,13 @@ app = dash.Dash(__name__,
                 external_stylesheets=external_stylesheets,
                 meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
 
+app.config["suppress_callback_exceptions"] = True
+
 # Set colors
 colors = {
     'background': '#303030',
     'text_h1': '#ffffff'
 }
-
 
 # Set layout
 app.layout = html.Div(
@@ -146,37 +171,12 @@ app.layout = html.Div(
     ]
 )
 
-@app.callback(
-    [Output('app_content','children')],
-    [Input('app_tabs','value')],
-)
-def render_content(tab_switch):
-    if tab_switch == 'tab1':
-        return html.Div([
-            select_country(),
-            select_checkbox(),
-            select_range_slider(),
-            dcc.Graph(id='line_plot_country'),
-            dcc.Graph(id='line_plot_new_cases'),
-            dcc.Graph(id='line_plot_percent_of_new_cases'),
-            dcc.Graph(id='line_plot_percent_of_population'),
-        ]),
-    elif tab_switch == 'tab2':
-        return html.Div([
-            html.H3('Continent')
-        ]),
-    elif tab_switch == 'tab3':
-        return html.Div([
-            html.H3('Poland')
-        ]),
 
-
-'''
 @app.callback(
     Output('line_plot_country','figure'),
-    [Input('select_dropdown_country', 'value'),
-     Input('select_rangeslider_days', 'value'),
-     Input('select_checkbox_type_value', 'value')]
+    [Input('country_tab_country', 'value'),
+     Input('country_tab_days', 'value'),
+     Input('country_tab_type', 'value')]
 )
 def update_line_plot(selected_countries, selected_days, selected_type):
     filtered_df = df[df['country'].isin(selected_countries) & df['day_of_epidemie'].isin(range(selected_days[0], selected_days[1]))]
@@ -204,9 +204,9 @@ def update_line_plot(selected_countries, selected_days, selected_type):
 
 @app.callback(
     Output('line_plot_new_cases','figure'),
-    [Input('select_dropdown_country', 'value'),
-     Input('select_rangeslider_days', 'value'),
-     Input('select_checkbox_type_value', 'value')]
+    [Input('country_tab_country', 'value'),
+     Input('country_tab_days', 'value'),
+     Input('country_tab_type', 'value')]
 )
 def update_line_plot_new_cases(selected_countries, selected_days, selected_type):
     filtered_df = df[df['country'].isin(selected_countries) & df['day_of_epidemie'].isin(range(selected_days[0], selected_days[1]))]
@@ -234,9 +234,9 @@ def update_line_plot_new_cases(selected_countries, selected_days, selected_type)
 
 @app.callback(
     Output('line_plot_percent_of_new_cases','figure'),
-    [Input('select_dropdown_country', 'value'),
-     Input('select_rangeslider_days', 'value'),
-     Input('select_checkbox_type_value', 'value')]
+    [Input('country_tab_country', 'value'),
+     Input('country_tab_days', 'value'),
+     Input('country_tab_type', 'value')]
 )
 def update_line_plot_percent_of_new_cases(selected_countries, selected_days, selected_type):
     filtered_df = df[df['country'].isin(selected_countries) & df['day_of_epidemie'].isin(range(selected_days[0], selected_days[1]))]
@@ -264,9 +264,9 @@ def update_line_plot_percent_of_new_cases(selected_countries, selected_days, sel
 
 @app.callback(
     Output('line_plot_percent_of_population','figure'),
-    [Input('select_dropdown_country', 'value'),
-     Input('select_rangeslider_days', 'value'),
-     Input('select_checkbox_type_value', 'value')]
+    [Input('country_tab_country', 'value'),
+     Input('country_tab_days', 'value'),
+     Input('country_tab_type', 'value')]
 )
 def update_line_plot_percent_of_population(selected_countries, selected_days, selected_type):
     filtered_df = df[df['country'].isin(selected_countries) & df['day_of_epidemie'].isin(range(selected_days[0], selected_days[1]))]
@@ -291,7 +291,7 @@ def update_line_plot_percent_of_population(selected_countries, selected_days, se
             yaxis=dict(title='Count'),
         )
     }
-'''
+
 
 if __name__=='__main__':
     app.run_server(debug=True)

@@ -39,5 +39,8 @@ def get_map_data(df=df_m):
     df.dropna(inplace=True)
     return df
 
+def init_df(path=FILE_PATH_MERGED):
+    return pd.read_csv(path, sep='\t', encoding='utf-8')
+
 if __name__=='__main__':
-    get_map_data()
+    print(max(init_df().day_of_epidemie))
