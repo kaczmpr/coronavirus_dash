@@ -11,6 +11,7 @@ from dash.dependencies import  Input, Output
 # Read data from datafile
 df = pd.read_csv(FILE_PATH_MERGED, sep='\t', encoding='utf-8')
 
+# Create country tab
 def build_country_inputs():
     return html.Div([
         html.Div([
@@ -26,7 +27,7 @@ def build_country_inputs():
                         for country in analyzer.get_countries(df)
                     ],
                     placeholder='Select country',
-                    value=[],
+                    value=['poland','sweden','czech republic'],
                     multi=True,
                     style={'padding': '10px', 'max-width': '800px'}
                 )
@@ -55,11 +56,52 @@ def build_country_inputs():
                     marks={day: '{}'.format(day) for day in range(1, max(df.day_of_epidemie))},
                     min=1,
                     max=max(df.day_of_epidemie),
-                    value=[1, 10]
+                    value=[1, 50]
                 )
             ]),
         ], className='row')
     ])
+
+
+def build_continet_tab():
+    return html.Div([
+        html.Div([
+            html.Div([
+                html.P(),
+                html.H5('Input parameters region'),
+                dcc.Dropdown(
+                    id='region_tab_region',
+                    options=[
+                        dict(
+                            label=str(region).capitalize(),
+                            value=str(region))
+                        for region in analyzer.get_regions(df)
+                    ],
+                    placeholder='Select region',
+                    value=['Asia', 'Americas', 'Europe'],
+                    multi=True,
+                    style={'padding': '10px', 'max-width': '800px'}
+                )
+            ], className='six columns'),
+
+            html.Div([
+                html.P(),
+                html.H5('Input parameters type'),
+                dcc.RadioItems(
+                    id='region_tab_type',
+                    options=[
+                        {'label': 'cases', 'value': 'cases'},
+                        {'label': 'deaths', 'value': 'deaths'},
+                    ],
+                    value='cases',
+                )
+            ], className='six columns'),
+        ], className='row'),
+    ])
+
+
+def build_poland_tab():
+    pass
 
 
 def build_title():
@@ -117,7 +159,9 @@ def build_tabs():
                         className='custom_tab',
                         selected_className='custom_tab_selected',
                         children=[
-                            html.H3('Continent')
+                            build_continet_tab(),
+                            dcc.Graph(id='line_plot_continent'),
+                            dcc.Graph(id='region_pie_chart'),
                         ]
                     ),
                     dcc.Tab(
@@ -202,6 +246,7 @@ def update_line_plot(selected_countries, selected_days, selected_type):
         )
     }
 
+
 @app.callback(
     Output('line_plot_new_cases','figure'),
     [Input('country_tab_country', 'value'),
@@ -231,6 +276,7 @@ def update_line_plot_new_cases(selected_countries, selected_days, selected_type)
             yaxis=dict(title='Count'),
         )
     }
+
 
 @app.callback(
     Output('line_plot_percent_of_new_cases','figure'),
@@ -262,6 +308,7 @@ def update_line_plot_percent_of_new_cases(selected_countries, selected_days, sel
         )
     }
 
+
 @app.callback(
     Output('line_plot_percent_of_population','figure'),
     [Input('country_tab_country', 'value'),
@@ -290,6 +337,51 @@ def update_line_plot_percent_of_population(selected_countries, selected_days, se
             xaxis=dict(title='Days of epidemie'),
             yaxis=dict(title='Count'),
         )
+    }
+
+
+@app.callback(
+    Output('line_plot_continent', 'figure'),
+    [Input('region_tab_region', 'value'),
+     Input('region_tab_type', 'value')]
+)
+def update_line_plot_continent(selected_region, selected_type):
+    grouped_df = df.groupby(['date', 'region'], as_index=False).agg({'cases': 'sum', 'deaths': 'sum', 'new_cases': 'sum'})
+    filtered_df = grouped_df[grouped_df['region'].isin(selected_region)]
+    traces = []
+    for region in filtered_df.region.unique():
+        df_by_region = filtered_df[filtered_df['region'] == region]
+        traces.append(dict(
+            x=df_by_region['date'],
+            y=df_by_region[selected_type],
+            mode='lines+markers',
+            text=region,
+            textposition='bottom center',
+            type='scatter',
+            name=region
+        ))
+    return {
+        'data': traces,
+        'layout': dict(
+            title='Daily COVID-19 cases in region',
+            showlegend=True,
+            xaxis=dict(title='Date'),
+            yaxis=dict(title='Count'),
+        )
+    }
+
+
+@app.callback(
+    Output('region_pie_chart', 'figure'),
+    [Input('region_tab_region', 'value'),
+     Input('region_tab_type', 'value')],
+)
+def update_region_pie_char(selected_region, selected_type):
+    grouped_df = df.groupby(['date', 'region'], as_index=False).agg({'cases': 'sum', 'deaths': 'sum', 'new_cases': 'sum'})
+    filtered_df = grouped_df[grouped_df['date'] == analyzer.get_max_date(df)]
+    return {
+        'data': [go.Pie(labels=filtered_df.region, values=filtered_df[selected_type])],
+        'layout': go.Layout(title='Pie chart')
     }
 
 

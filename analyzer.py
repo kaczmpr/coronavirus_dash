@@ -1,7 +1,5 @@
 import pandas as pd
 import ast
-import plotly.express as px
-import plotly.graph_objects as go
 from os import path
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.max_rows', 500)
@@ -15,11 +13,19 @@ df_c = pd.read_csv(FILE_PATH_COUNTRIES, sep='\t', encoding='utf-8')
 df_m = pd.read_csv(FILE_PATH_MERGED, sep='\t', encoding='utf-8')
 
 def get_countries(df):
-    """Some documentation of function"""
+    """return unique country list"""
     return sorted(list(df.country.unique()),key=str)
 
+def get_regions(df):
+    """return unique region list"""
+    return sorted(list(df.region.unique()),key=str)
+
+def get_max_date(df):
+    """return last date of data"""
+    return max(df.date)
+
 def get_dates(df):
-    """Some documentation of function"""
+    """return list of data dates"""
     return list(df.date.unique())
 
 def get_last_data(df):
@@ -34,13 +40,10 @@ def country_intesection(df_covid=df, df_country=df_c):
     """Some documentation of function"""
     return sorted(list(set(df_covid.country).intersection(set([str(country).casefold() for sublist in df_country.names.tolist() for country in ast.literal_eval(sublist)]))))
 
-def get_map_data(df=df_m):
-    df = df_m[['date', 'country', 'cases', 'day_of_epidemie', 'new_cases', 'name', 'alpha3Code', 'region']]
-    df.dropna(inplace=True)
-    return df
-
 def init_df(path=FILE_PATH_MERGED):
     return pd.read_csv(path, sep='\t', encoding='utf-8')
 
 if __name__=='__main__':
-    print(max(init_df().day_of_epidemie))
+    df = init_df()
+    grouped_df = df.groupby(['date', 'region'], as_index=False).agg({'cases': 'sum', 'deaths': 'sum', 'new_cases': 'sum'})
+    print(grouped_df.head(100))
