@@ -6,3 +6,6 @@ share
 tcl
 LICENSE.txt
 .idea
+wheels
+extractor.log
+__pycache__/
