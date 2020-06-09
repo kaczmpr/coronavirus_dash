@@ -13,7 +13,7 @@ for data analysis
 ## Run Project Locally
 
 To run the project locally:
-* Clone or for this repository
+* Clone or fork this repository
 * Install docker on your machine
 * Go to repository directory and build image: `docker build -t username/imagename`
 * Run docker image: `docker run -p 8050:8050 username/imagename`
