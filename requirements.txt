@@ -20,7 +20,7 @@ GDAL==2.2.3
 geopandas==0.7.0
 idna==2.9
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.15.1
 kiwisolver==1.2.0
 lxml==4.5.0
